@@ -1,0 +1,10 @@
+#下記の条件を定義
+top_side = 10
+bottom_side = 20
+height = 5
+
+#上記より台形の面積を計算
+area = ((top_side + bottom_side)* height / 2)
+
+#結果を平方センチメートルで表示
+print(str(area) +  "㎠ ")
