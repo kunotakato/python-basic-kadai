@@ -1,0 +1,85 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMLQiarisClu0K4ScBA1ccd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kunotakato/python-basic-kadai/blob/main/%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%92%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%9D%E3%81%86\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "\n",
+        "*   名前(name)と年齢(age)の属性を持つHumanクラスを作成\n",
+        "*   nameとageを標準出力（print）するメソッド（printinfo）を追加\n",
+        "\n",
+        "Humanクラスのインスタンスは、変数に代入し、プログラム内で使用すること\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "-SMo3_6psyqO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 35,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "flh1UoUdst5w",
+        "outputId": "81759e6d-99c8-44ae-cc3f-208a2e0c484a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "侍太郎\n",
+            "25\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Human():\n",
+        "  def __init__(self,name,age):\n",
+        "    # 属性を定義する\n",
+        "    self.name = name\n",
+        "    self.age =  age\n",
+        "\n",
+        "  # printinfoメソッドを定義\n",
+        "  def printinfo(self):\n",
+        "      print(self.name)\n",
+        "      print(self.age)\n",
+        "\n",
+        "#インスタンス化\n",
+        "human = Human(\"侍太郎\",25)\n",
+        "\n",
+        "# printinfoメソッドにアクセスし、値を出力\n",
+        "human.printinfo()"
+      ]
+    }
+  ]
+}
