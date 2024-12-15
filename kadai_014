@@ -1,0 +1,25 @@
+変更前
+price1 = 100
+price2 = 200
+
+def total():
+    tax = 1.1
+    return price1 + price2
+
+print(total() * tax)
+
+
+変更後
+
+# グローバル変数を定義する
+tax = 1.1
+
+def total():
+    #　ローカル変数を定義する
+    price1 = 100
+    price2 = 200
+    
+    total = (price1 + price2 ) * tax
+    return total
+ 
+print(total())
