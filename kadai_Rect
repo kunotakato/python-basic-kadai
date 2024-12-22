@@ -1,0 +1,23 @@
+#　長方形（Rect）の面積（area）= 幅(width)×高さ(height)
+
+class Rect:
+   def __init__(self,width,height):
+    # 属性を定義する
+       self.width = width
+       self.height = height
+
+  #メソッドを定義する
+   def area(self):
+      self.area = area
+
+#　メソッドにアクセスし、計算式を実行。
+   def __init__(self,width,height):
+    self.width = width
+    self.height = height
+    self.area = self.width * self.height
+
+# インスタンス化する
+Rect = Rect(10,20)
+
+#　属性にアクセスし、値を出力
+print(Rect.area)
